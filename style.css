@@ -1,11 +1,12 @@
 body {
     height: 125vh;
-    background-image: url(imagini/fundal.jpg);
+    background-image: url(imagini/wood.jpg);
     background-size: cover;
     font-family: sans-serif;
     margin-top: 80px;
     padding: 30px;
     color: white;
+    position:relative;
 }
 
 main {
@@ -13,15 +14,18 @@ main {
 }
 
 header {
-    background-color: white;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
+    font-size: 25px;
+    justify-content: center;
     display: flex;
     align-items: center;
     box-shadow: 0 0 25px 0 black;
+    font-size:  30px;
+    
 }
 
 header li {
@@ -29,16 +33,24 @@ header li {
 }
 
 header li a {
-    color: black;
+    color: white;
+    font-family: Impact;
     text-decoration: none;
 }
 
 nav ul li{
     display: inline-block;
+    padding: 55px;
 }
 
-.logo{
-    width: 40px;
-    height: 40px;
-    background-size: contain;
+footer{
+    width: 100%;
+    height: 5%;
+    border-top: 1px solid #E0E0E0;
+    position: absolute;
+    bottom: 0px; 
+    left: 0px; 
+    text-align: center;
 }
+
+footer-wraper
