@@ -1,0 +1,115 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(imagini/fundal.jpg);
+}
+
+header {
+    position: relative;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0 0 25px 0 black;
+    font-size:  30px;
+    
+}
+header p{
+    color: black;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: white;
+    font-family: Impact;
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 55px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+}
+
+.stanga {
+    width: 60%;
+    position: relative;
+}
+
+.dreapta {
+    width: 40%;
+    margin-top: 60px;
+}
+
+.stanga img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.descriere {
+    border-bottom: 2px solid red;
+    margin-bottom: 20px;
+}
+
+.descriere span {
+    font-size: 15px;
+    color: deepskyblue;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.descriere h1 {
+    font-weight: 300;
+    font-size: 52px;
+    color: white;
+}
+
+.descriere p {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    line-height: 24px;
+}
+
+.pret {
+    align-items: center;
+}
+ 
+.pret span {
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    margin-right: 40px;
+}
+ 
+.buton {
+    display: inline-block;
+    background-color: green;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+}
+.buton:hover {
+  background-color: #64af3d;
+}
