@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>HttpCafe</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+      <h1>HttpCafe</h1>
+    </header>
+   
+    <div role="contentinfo">
+      <dl>
+        <dt>Autori</dt>
+        <dd>
+          Spinu Vasilca-Stefan
+          &amp;
+         Muntean Catalin-Tudor
+      </dl>
+    </div>
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+      <h2>Abstract</h2>
+      <p>
+        FiiCafe este o aplicatie web care are rolul de a ajuta la servirea de bauturi si preparate intr-o cafenea.
+      </p>
+    </section>
+    
+    <section id="structure">
+         <h2>Tehnologii utilizate</h2>
+         <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Php</li>
+            <li>JavaScript</li>
+            <li>Json</li>
+            <li>Atom</li>
+        </ul>
+      </section>
+      
+    <section id="structure">
+      
+      <h2>Arhitectura</h2>
+         <img src = "mvc.png" width="98%" alt="Scholarly HTML logo">
+         <p>    Arhitectura – Aplicatia va fi proiectata pe baza arhitecturii de tip MVC (Model View Controller).  In functie de actiunile utilizatorul, browser va redirectiona utilizatorul catre pagina care satisface cerinta</p>
+      <section id="Root">
+        
+        
+        <h3>Pagina Principala</h3>
+        <p>
+          Intampina utilizatorul cu o interfata “retro”. Aceasta pagina va prezenta utilizatorului o scurta descriere  a cafenelei, dar si sugestii de produse "populare".
+        </p>
+      </section>
+      <section id="Root">
+       
+        <h3>Pagina de rezervare</h3>
+        <p>
+          Va permite utilizatorului sa rezerve o masa dintre cele disponibile (vor fi afisate sub forma unei mape, mesele fiind plasate in functie de asezarea lor in local in planul cladirii). Acesta da click pe o masa libera si ii este alocat un loc. Daca nu exista nici o masa disponibila, utilizatorul va fi intampinat de un mesaj prin care ne cerem scuze.
+        </p>
+       
+      </section>
+      
+      <section id="Root">
+       
+        <h3>Pagina de inregistrare </h3>
+        <p>
+          Utilizatorul va introduce un nume de utilizator, numele si prenumele sau, numarul de telefon  si parola de 2 ori (parolele vor fi criptate folosind tehnica de hashing), pentru a fi siguri ca parola aleasa este cea dorita. Aplicatia va verifica datele introduse. Daca datele nu sunt valide, utilizatorul va fi mentinut pe pagina de inregistrare, campurile problematice fiind evidentiate cu rosu. Daca acestea sunt valide, acesta va fi redirectionat catre pagina principala, de unde acesta poate achizitiona produse.
+        </p>
+       
+      </section>
+        
+      <section id="Root">
+       
+        <h3>Pagina de logare  </h3>
+        <p>
+          Utilizatorul se va putea loga fie utilizand combinatia : numar telefon – parola ; fie nume utilizator – parola; Daca datele introduse sunt valide, utilizatorul  este redirectionat catre pagina principala, fiind eligibil in a isi comanda produse. In timp ce utilizatorul introduce date, daca acesta introduce un nume de utilizator care contine caractere invalide, sau un numar de telefon incorect (Numere de telefon fara prefixul ‘07’, caractere non-cifre, numere de telefon cu lungime > 10), aplicatia va semnala greselile si nu va permite trecerea la urmatorul pas.
+        </p>
+       
+      </section>
+        
+        
+      <section id="Root">
+       
+        <h3>Pagina meniului</h3>
+        <p>
+          Va permite utilizatorului sa aleaga din categoriile de produse disponibile, precum : cafea, prajituri etc, apoi va fi redirectionat catre pagina care prezinta o serie de produse care fac parte din categoria dorita.
+        </p>
+       
+      </section>
+        
+      <section id="Root">
+        <h3>Pagina unui produs</h3>
+        <p>
+         Va permite utilizatorului sa comande un produs la masa sa.
+        </p>
+      </section>
+        
+       <section id="Root">
+        <h3>Pagina notei de plata </h3>
+        <p>
+         Va permite utilizatorului sa vizualizeze produsele comandate si suma ce trebuie achitata. Dupa ce ultilizatorul apasa pe butonul achita, o sa ii se deschida un tab, in care este rugat sa introduca codul oferit de cate casierita. Acest cod este oferti doar dupa ce comanda este achitata.Odata acest cod introdus (utilizatorul paraseste cafeneaua), este intampinat de un mesaj de multumire, este deconectat iar masa atribuita acestuia este dealocata.
+        </p>
+      </section>
+      <img src = "use_case.png" width="100%" alt = "Poza use">
+    </section>
+      
+      
+    <section id="introduction" role="doc-introduction">
+      <h2>Modelarea datelor</h2>
+      <img src = "BD.png" width="100%" alt = "Poza bd">
+      <p>Pentru a stoca datele, vom folosi o baza de date MySql</p>
+      <p>Baza de date va contine tabelele :</p>
+      <p>
+        <i>Tabela Clienti</i> : va mentine informatii despre clientii care intra in restaurant. Aceasta tabela va contine campurile : id_client (pk) , nume_utilizator, nume, prenume, numar telefon </p>
+      <p>
+        <i>Tabela Produse</i>: va mentine informatii despre produsele care sunt vandute in restaurant. Aceasta tabela va contine campurile: id_produs (pk), nume, pret,  id_categorie (fk - tabela Categorie), id_nota (fk - tabela Nota) </p>
+      <p>
+      <p>
+        <i>Tabela Comanda</i>: va mentine informatii -despre fiecare produs care este comandat de catre client. Aceasta tabela va contine campurile: id_comanda (pk), id_client (fk - tabela Clienti), id_produs (fk - tabela Produse) 
+      </p>
+      <p>
+        <i>Tabela Categori</i>: va mentine informatii despre categoriile de produse pe care localul nostrum le ofera. Aceasta tabela va contine campurile: id_categorie (pk), alergeni
+      </p>
+        
+      <p>
+        <i>Tabela Mese</i>: va mentine informatii despre mesele din restaurant si disponibilitatea acestora. Aceasta tabela va contine campurile: id_mese (pk), numar, status, id_client (fk - tabela Clienti).
+      </p>
+        
+      <p>
+        <i>Tabela Stoc</i>: va mentine informatii despre stocul curent al magazinului. Aceasta tabela va contine campurile: id_stoc (pk), numar, data_update,  id_produs (fk - tabela Produs)
+      </p>
+        
+      <p>
+        <i>Tabela Nota</i>: va mentine informatii despre produsele comandata in actuala sesiune de catre client, si data la care a fost efecuata nota si codul pentru a putea parasi cafeneaua. Aceasta tabela va contine campurile: id_nota (pk), data, cod
+      </p>     
+    </section>
+      
+      
+    <section id="introduction" role="doc-introduction">
+        <h2>Repartizarea sarcinilor</h2>
+        
+        <p>Spinu Vasilica:</p>
+        <ul>
+        <li>creare baza de date si optimizare folosind indecsi</li>
+        <li>creare formular rezervare</li>
+        <li>creare formular de checkout</li>
+        <li>creare widget catre "filmul" ocuparii</li>
+        <li>expunerea "filmului" ocuparii in cele 3 formate cerute</li>
+        </ul>
+        
+        <p>Muntean Catalin:</p>
+        <ul>
+        <li>populare baza de date</li>
+        <li>formular login</li>
+        <li>formular creare cont</li>
+        <li>pagini produse individuale (comanda, actualizarea notei, actualizarea stocului)</li>
+        </ul>
+      </section>
+      
+      
+  </body>
+</html>
+ 
