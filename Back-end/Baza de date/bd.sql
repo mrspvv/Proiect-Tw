@@ -43,11 +43,13 @@ CREATE TABLE Nota(
     id_client INT NOT NULL,
 	cod INT NOT NULL,
 	data_inregistrare DATE NOT NULL,
+	cod VARCHAR (10) NOT NULL,
     FOREIGN KEY (id_client) REFERENCES Clienti (id_clienti)
 );
 
 CREATE TABLE Categori(
 	categorie VARCHAR(15) NOT NULL PRIMARY KEY,
+	poza VARCHAR(100) NOT NULL,
 	alergeni VARCHAR(100) NOT NULL
 );
 
@@ -55,6 +57,7 @@ CREATE TABLE Produse(
 	id_produs INT NOT NULL PRIMARY KEY,
 	nume VARCHAR(30) NOT NULL,
 	categorie VARCHAR(30) NOT NULL,
+	poza VARCHAR(100) NOT NULL,
 	pret INT NOT NULL,
 	FOREIGN KEY (categorie) REFERENCES Categori(categorie)
 );
@@ -67,3 +70,5 @@ CREATE TABLE Mese(
 	
 );
 
+CREATE INDEX data_nota
+ON Nota (data_inregistrare);
