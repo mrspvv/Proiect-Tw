@@ -1,0 +1,16 @@
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('1', 'IcedCoffee', 'Cafea', 'imagini\\Produse\\icedCoffe.png', '10');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('2', 'Cafea', 'Cafea', 'imagini\\Produse\\cafea1.png', '6');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('3', 'Latte', 'Cafea', 'imagini\\Produse\\expresso.png', '12');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('4', 'Sprite', 'Carbogazoase', 'imagini\\Produse\\sprite.png', '4');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('5', 'Fanta', 'Carbogazoase', 'imagini\\Produse\\fanta.png', '4');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('6', 'Coca-Cola', 'Carbogazoase', 'imagini\\Produse\\cola.png', '5');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('7', 'Dorna', 'Carbogazoase', 'imagini\\Produse\\dorna.png', '4');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('8', 'Ecler', 'Prajituri', 'imagini\\Produse\\ecler.jpg', '8');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('9', 'Tiramisu', 'Prajituri', 'imagini\\Produse\\tiramisu.jpg', '9');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('10', 'Corona', 'Alcoolice', 'imagini\\Produse\\corona.png', '12');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('11', 'Heineken', 'Alcoolice', 'imagini\\Produse\\heineken.png', '10');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('12', 'Stela Artois', 'Alcoolice', 'imagini\\Produse\\stela.png', '10');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('13', 'Gin - 50 ml', 'Alcoolice', 'imagini\\Produse\\gin.png', '8');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('14', 'Whisky', 'Alcoolice', 'imagini\\Produse\\jack.png', '13');
+
+
