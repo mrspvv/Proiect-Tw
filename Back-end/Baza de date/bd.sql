@@ -58,6 +58,7 @@ CREATE TABLE Produse(
 	nume VARCHAR(30) NOT NULL,
 	categorie VARCHAR(30) NOT NULL,
 	poza VARCHAR(100) NOT NULL,
+	descrire VARCHAR(100) NOT NULL,
 	pret INT NOT NULL,
 	FOREIGN KEY (categorie) REFERENCES Categori(categorie)
 );
