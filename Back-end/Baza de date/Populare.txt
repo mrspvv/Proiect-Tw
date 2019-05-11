@@ -13,4 +13,19 @@ INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES 
 INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('13', 'Gin - 50 ml', 'Alcoolice', 'imagini\\Produse\\gin.png', '8');
 INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `pret`) VALUES ('14', 'Whisky', 'Alcoolice', 'imagini\\Produse\\jack.png', '13');
 
+INSERT INTO `clienti` (`id_client`, `nume`, `prenume`, `numar_telefon`, `parola`) VALUES ('1', 'Ionescu', 'Cristi', '0727185843', '1234567');
+INSERT INTO `clienti` (`id_client`, `nume`, `prenume`, `numar_telefon`, `parola`) VALUES ('2', 'Moraru', 'George', '0746922401', 'qwertyuiop');
+INSERT INTO `clienti` (`id_client`, `nume`, `prenume`, `numar_telefon`, `parola`) VALUES ('3', 'Ungureanu', 'Florin', '0755190447', 'abracadabra');
+
+INSERT INTO `nota` (`id_nota`, `id_client`, `data_inregistrare`, `cod`) VALUES ('1', '1', '2019-05-11', '627965');
+INSERT INTO `nota` (`id_nota`, `id_client`, `data_inregistrare`, `cod`) VALUES ('2', '3', '2019-05-08', '471032');
+
+INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('1', '1', 'ocupat', '1');
+INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('2', '0', 'liber', '2');
+INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('3', '0', 'liber', '3');
+INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('4', '2', 'ocupat', '4');
+INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('5', '3', 'ocupat', '5');
+INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('6', '0', 'liber', '6');
+INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('7', '0', 'liber', '7');
+INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('8', '0', 'liber', '8');
 
