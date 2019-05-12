@@ -49,6 +49,7 @@ CREATE TABLE Note(
 
 CREATE TABLE Categorii(
 	categorie VARCHAR(100) NOT NULL PRIMARY KEY,
+	poza VARCHAR(30) NOT NULL,
 	alergeni VARCHAR(100) NOT NULL
 );
 
@@ -56,6 +57,7 @@ CREATE TABLE Produse(
 	id_produs INT NOT NULL PRIMARY KEY,
 	nume VARCHAR(30) NOT NULL,
 	categorie VARCHAR(30) NOT NULL,
+	poza VARCHAR(30) NOT NULL,
 	descriere VARCHAR(300) NOT NULL,
 	pret INT NOT NULL,
 	FOREIGN KEY (categorie) REFERENCES Categorii(categorie)
