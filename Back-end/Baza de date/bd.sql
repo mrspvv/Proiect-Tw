@@ -27,7 +27,7 @@ CREATE TABLE Comanda(
 	id_comanda INT NOT NULL,
 	FOREIGN KEY (id_client) REFERENCES Clienti (id_clienti),
 	FOREIGN KEY (id_produs) REFERENCES Produse(id_produs),
-	FOREIGN KEY (id_nota) REFERENCES Nota(id_nota)
+	FOREIGN KEY (id_nota) REFERENCES Note(id_nota)
 	
 );
  
@@ -48,7 +48,7 @@ CREATE TABLE Note(
 );
 
 CREATE TABLE Categorii(
-	categorie VARCHAR(15) NOT NULL PRIMARY KEY,
+	categorie VARCHAR(100) NOT NULL PRIMARY KEY,
 	alergeni VARCHAR(100) NOT NULL
 );
 
@@ -58,7 +58,7 @@ CREATE TABLE Produse(
 	categorie VARCHAR(30) NOT NULL,
 	descriere VARCHAR(300) NOT NULL,
 	pret INT NOT NULL,
-	FOREIGN KEY (categorie) REFERENCES Categori(categorie)
+	FOREIGN KEY (categorie) REFERENCES Categorii(categorie)
 );
 
 CREATE TABLE Mese(
