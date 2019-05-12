@@ -4,9 +4,9 @@ DROP TABLE IF EXISTS Stoc;
 
 DROP TABLE IF EXISTS Produse;
 
-DROP TABLE IF EXISTS Categori;
+DROP TABLE IF EXISTS Categorii;
 
-DROP TABLE IF EXISTS Nota;
+DROP TABLE IF EXISTS Note;
  
 DROP TABLE IF EXISTS Clienti;
 
@@ -39,7 +39,7 @@ CREATE TABLE Stoc(
 	FOREIGN KEY (id_produs) REFERENCES Produse (id_produs)
 );
 
-CREATE TABLE Nota(
+CREATE TABLE Note(
 	id_nota INT NOT NULL PRIMARY KEY,
     id_client INT NOT NULL,
 	cod INT NOT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE Nota(
     FOREIGN KEY (id_client) REFERENCES Clienti (id_clienti)
 );
 
-CREATE TABLE Categori(
+CREATE TABLE Categorii(
 	categorie VARCHAR(15) NOT NULL PRIMARY KEY,
 	alergeni VARCHAR(100) NOT NULL
 );
