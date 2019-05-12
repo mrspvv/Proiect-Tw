@@ -1,25 +1,6 @@
-
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('1', 'IcedCoffee', 'Cafea', 'imagini\\Produse\\icedCoffe.png', 'Acelasi gust intens, racoritor', '10');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('2', 'Cafea', 'Cafea', 'imagini\\Produse\\cafea1.png', 'din boabe proaspat macinate', '6');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('3', 'Latte', 'Cafea', 'imagini\\Produse\\expresso.png', 'Armonie perfecta intre cafea si lapte', '12');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('4', 'Sprite', 'Carbogazoase', 'imagini\\Produse\\sprite.png', 'Cea mai cunoscuta bautura racoritoare cu gust de lamaie din lume', '4');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('5', 'Fanta', 'Carbogazoase', 'imagini\\Produse\\fanta.png', 'Fanta cu gust racoritor de portocale', '4');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('6', 'Coca-Cola', 'Carbogazoase', 'imagini\\Produse\\cola.png', 'Bautura preferata a planetei. Din 1886.', '5');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('7', 'Dorna', 'Carbogazoase', 'imagini\\Produse\\dorna.png', 'Apa minerala plata din inima Bucovinei', '4');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('8', 'Ecler', 'Prajituri', 'imagini\\Produse\\ecler.jpg', 'Gustul clasic cu arome contemporane iti va desfata simturile', '8');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('9', 'Tiramisu', 'Prajituri', 'imagini\\Produse\\tiramisu.jpg', 'Crema mascarpone gustoasa si piscoturi inmuiate in cafea', '9');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('10', 'Corona', 'Alcoolice', 'imagini\\Produse\\corona.png', '"La cerveza mas fina"', '12');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('11', 'Heineken', 'Alcoolice', 'imagini\\Produse\\heineken.png', 'Bere din Amsterdam', '10');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('12', 'Stela Artois', 'Alcoolice', 'imagini\\Produse\\stela.png', 'Bere belgiana', '10');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('13', 'Gin', 'Alcoolice', 'imagini\\Produse\\gin.png', '50 ml', '8');
-INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`, `descriere`, `pret`) VALUES ('14', 'Whisky', 'Alcoolice', 'imagini\\Produse\\jack.png', 'Jack Daniels 50 ml', '13');
-
 INSERT INTO `clienti` (`id_client`, `nume`, `prenume`, `numar_telefon`, `parola`) VALUES ('1', 'Ionescu', 'Cristi', '0727185843', '1234567');
 INSERT INTO `clienti` (`id_client`, `nume`, `prenume`, `numar_telefon`, `parola`) VALUES ('2', 'Moraru', 'George', '0746922401', 'qwertyuiop');
 INSERT INTO `clienti` (`id_client`, `nume`, `prenume`, `numar_telefon`, `parola`) VALUES ('3', 'Ungureanu', 'Florin', '0755190447', 'abracadabra');
-
-INSERT INTO `nota` (`id_nota`, `id_client`, `data_inregistrare`, `cod`) VALUES ('1', '1', '2019-05-11', '627965');
-INSERT INTO `nota` (`id_nota`, `id_client`, `data_inregistrare`, `cod`) VALUES ('2', '3', '2019-05-08', '471032');
 
 INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('1', '1', 'ocupat', '1');
 INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('2', '0', 'liber', '2');
@@ -29,4 +10,30 @@ INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('5',
 INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('6', '0', 'liber', '6');
 INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('7', '0', 'liber', '7');
 INSERT INTO `mese` (`id_mese`, `id_client`, `status_masa`, `numar`) VALUES ('8', '0', 'liber', '8');
+
+INSERT INTO `categorii` (`categorie`, `alergeni`) VALUES ('Băuturi carbogazoase', '-');
+INSERT INTO `categorii` (`categorie`, `alergeni`) VALUES ('Băuturi alcoolice', '-');
+INSERT INTO `categorii` (`categorie`, `alergeni`) VALUES ('Prăjituri', '-');
+INSERT INTO `categorii` (`categorie`, `alergeni`) VALUES ('Cafea', '-');
+
+INSERT INTO `nota` (`id_nota`, `id_client`, `data_inregistrare`, `cod`) VALUES ('1', '1', '2019-05-11', '627965');
+INSERT INTO `nota` (`id_nota`, `id_client`, `data_inregistrare`, `cod`) VALUES ('2', '3', '2019-05-08', '471032');
+
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('1', 'IcedCoffee', 'Cafea', 'imagini\\Produse\\icedCoffe.png', 'din boabe proaspăt măcinate', '10');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('2', 'Cafea', 'Cafea', 'imagini\\Produse\\cafea1.png', 'Același gust intens, răcoritor', '6');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('3', 'Latte', 'Cafea', 'imagini\\Produse\\expresso.png', 'Armonie perfectă între cafea și lapte', '12');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('4', 'Sprite', 'Băuturi carbogazoase', 'imagini\\Produse\\sprite.png', 'Cea mai cunoscută băutura cu gust de lămâie', '4');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('5', 'Fanta', 'Băuturi carbogazoase', 'imagini\\Produse\\fanta.png', 'Cu gust de portocale', '4');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('6', 'Coca-Cola', 'Băuturi carbogazoase', 'imagini\\Produse\\cola.png', 'Băutura preferată a tuturor. Din 1886', '5');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('7', 'Dorna', 'Băuturi carbogazoase', 'imagini\\Produse\\dorna.png', 'Apă din inima Bucovinei', '4');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('8', 'Ecler', 'Prăjituri', 'imagini\\Produse\\ecler.jpg', 'Gust clasic cu arome contemporane îți va desfăta simțurile', '8');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('9', 'Tiramisu', 'Prăjituri', 'imagini\\Produse\\tiramisu.jpg', 'Cremă mascarpone gustoasă și si pișcoturi înmuiate în cafea', '9');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('10', 'Corona', 'Băuturi alcoolice', 'imagini\\Produse\\corona.png', '"La cerveza mas fina"', '12');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('11', 'Heineken', 'Băuturi alcoolice', 'imagini\\Produse\\heineken.png', 'Bere din Amsterdam', '10');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('12', 'Stela Artois', 'Băuturi alcoolice', 'imagini\\Produse\\stela.png', 'Bere belgiană', '10');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('13', 'Gin', 'Băuturi alcoolice', 'imagini\\Produse\\gin.png', '50 ml', '8');
+INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('14', 'Whisky', 'Băuturi alcoolice', 'imagini\\Produse\\jack.png', 'Jack Daniels 50 ml', '13');
+
+
+
 
