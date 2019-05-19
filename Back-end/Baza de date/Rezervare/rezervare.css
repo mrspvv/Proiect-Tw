@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imagini/fundal9.jpg);
+    background-size: cover;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+}
+
+.mese {
+    width: 28%;
+    background-image: url(imagini/paper.jpg);
+    position: relative;
+    margin-top: 10%;
+    left: 38%;
+    border-radius:10px;
+	
+}
+ul{
+	text-align:left;
+}
+li{
+	
+    margin-right: 2%;
+}
+.titlu{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 36px;
+}
+span {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 40px;
+}
+
+
+button {
+	text-align:right;
+    background-color: skyblue;
+    border-color: whitesmoke;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 4%;
+}
+
+.off{
+	
+    background-color: gray;
+
+    border-color: whitesmoke;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 4%;
+}
+
