@@ -1,0 +1,254 @@
+body {
+    height: 100%;
+    background-color: black;
+    background-image: url(imagini/fundal9.jpg);
+    background-size: cover;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 30px;
+    color: black;
+}
+
+header{
+    position: relative;
+}
+
+main {
+    color: black;
+}
+
+.button {
+	
+  background-image: url(imagini/paper.jpg);
+    background-size: cover;
+  background-color: black;
+  border: none;
+  color: black;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  height: 200px;
+  width: 200px;
+  margin: 4px 2px;
+  cursor: pointer;
+  opacity: 0.95;
+  transition: 0.3s;
+  box-shadow: 0 0 25px 0 black;
+}
+
+.button:hover {opacity: 1}
+
+.linkuri-meniu {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0 0 25px 0 black;
+    font-size:  30px;
+    
+}
+.linkuri-meniu .test{
+    margin-top: 2.5%;
+    height: 100%;
+}
+.linkuri-meniu .test img{
+    right: auto;
+    max-height: 100%;
+}
+
+.linkuri-meniu .test1{
+    margin-top: 2.5%;
+    height: 100%;
+}
+.linkuri-meniu .test1 img{
+    right: auto;
+    max-height: 70%;
+}
+
+.logo{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.autoscroll { overflow: auto;    }
+.clipped    { overflow: hidden;  }
+.default    { overflow: visible; }
+
+.logo img{
+    height: 250px;
+}
+
+
+header p{
+    color: black;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 55px;
+}
+
+footer{
+    width: 100%;
+    height: 5%;
+    position: sticky;
+    bottom: 0%; 
+    left: 0px; 
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer p{
+    color: white;
+    margin-top: 1%;
+}
+
+
+.nota {
+    background-image: url(imagini/paper.jpg);
+    background-size: cover;
+    width: 33%;
+    height: 66%;
+    color: black;
+    top: 25%;
+    left: 33%;
+    display: inline-block;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 25px 0 black;
+    position: absolute;
+}
+
+.nota span{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left: 6%;
+}
+
+.nota p{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 30px;
+}
+
+.titlu {
+    font-size: 28px;
+    padding: 25px;
+}
+
+.produs {
+    font-size: 20px;
+    padding: 18px;
+}
+
+.total {
+    font-size: 30px;
+    
+}
+
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-image: url(imagini/paper.jpg);
+  background-size: cover;
+  color: black;
+  background-color: burlywood;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.90;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  border-radius: 50%;
+  font-size: 28px;
+  height: 200px;
+  width: 200px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+
+.form-popup {
+  
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  background-image: url(imagini/paper.jpg);
+  background-size: cover;
+  max-width: 300px;
+  max-height: 500px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+

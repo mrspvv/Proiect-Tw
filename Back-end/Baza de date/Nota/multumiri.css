@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imagini/fundal9.jpg);
+    background-size: cover;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+	text-align:center;
+}
+
+.mese {
+    width: 28%;
+	height: 30%;
+    background-image: url(imagini/paper.jpg);
+    position: relative;
+    margin-top: 19%;
+    left: 38%;
+    border-radius:10px;
+	
+}
+
+.mese p{
+	padding-top: 10%;
+}
+.titlu{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 36px;
+}
+span {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 40px;
+}
+
+
+button {
+	text-align:right;
+    background-color: skyblue;
+    border-color: whitesmoke;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 4%;
+}
+
+.off{
+	
+    background-color: gray;
+
+    border-color: whitesmoke;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 4%;
+}
+
