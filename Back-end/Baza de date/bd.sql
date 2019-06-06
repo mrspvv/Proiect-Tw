@@ -66,7 +66,8 @@ CREATE TABLE Mese(
 	id_mese INT NOT NULL PRIMARY KEY,
 	id_client INT NOT NULL,
 	status_masa VARCHAR(30) NOT NULL,
-	numar INT NOT NULL
+	numar INT NOT NULL,
+	data_modificare localtimestamp
 	
 );
 
