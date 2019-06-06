@@ -21,13 +21,11 @@ CREATE TABLE Clienti(
 );
 
 CREATE TABLE Comanda(
-	id_nota INT NOT NULL PRIMARY KEY,
 	id_client INT NOT NULL,
 	id_produs INT NOT NULL,
-	id_comanda INT NOT NULL,
+	id_comanda INT NOT NULL PRIMARY KEY,
 	FOREIGN KEY (id_client) REFERENCES Clienti (id_clienti),
-	FOREIGN KEY (id_produs) REFERENCES Produse(id_produs),
-	FOREIGN KEY (id_nota) REFERENCES Note(id_nota)
+	FOREIGN KEY (id_produs) REFERENCES Produse(id_produs)
 	
 );
  
