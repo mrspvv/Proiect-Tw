@@ -2,14 +2,14 @@ INSERT INTO `clienti` (`id_client`, `nume`, `prenume`, `numar_telefon`, `parola`
 INSERT INTO `clienti` (`id_client`, `nume`, `prenume`, `numar_telefon`, `parola`) VALUES ('2', 'Moraru', 'George', '0746922401', 'qwertyuiop');
 INSERT INTO `clienti` (`id_client`, `nume`, `prenume`, `numar_telefon`, `parola`) VALUES ('3', 'Ungureanu', 'Florin', '0755190447', 'abracadabra');
 
-INSERT INTO `mese`  VALUES ('1', '1', 'ocupat', '1', systimestamp);
-INSERT INTO `mese`  VALUES ('2', '0', 'liber', '2', systimestamp);
-INSERT INTO `mese`  VALUES ('3', '0', 'liber', '3', systimestamp);
-INSERT INTO `mese`  VALUES ('4', '2', 'ocupat', '4', systimestamp);
-INSERT INTO `mese`  VALUES ('5', '3', 'ocupat', '5', systimestamp);
-INSERT INTO `mese`  VALUES ('6', '0', 'liber', '6', systimestamp);
-INSERT INTO `mese`  VALUES ('7', '0', 'liber', '7', systimestamp);
-INSERT INTO `mese`  VALUES ('8', '0', 'liber', '8', systimestamp);
+INSERT INTO `mese`  VALUES ('1', '1', 'ocupat', '1', localtimestamp);
+INSERT INTO `mese`  VALUES ('2', '0', 'liber', '2', localtimestamp);
+INSERT INTO `mese`  VALUES ('3', '0', 'liber', '3', localtimestamp);
+INSERT INTO `mese`  VALUES ('4', '2', 'ocupat', '4', localtimestamp);
+INSERT INTO `mese`  VALUES ('5', '3', 'ocupat', '5', localtimestamp);
+INSERT INTO `mese`  VALUES ('6', '0', 'liber', '6', localtimestamp);
+INSERT INTO `mese`  VALUES ('7', '0', 'liber', '7', localtimestamp);
+INSERT INTO `mese`  VALUES ('8', '0', 'liber', '8', localtimestamp);
 
 INSERT INTO `categorii` (`categorie`, `alergeni`) VALUES ('Băuturi carbogazoase', '-');
 INSERT INTO `categorii` (`categorie`, `alergeni`) VALUES ('Băuturi alcoolice', '-');
