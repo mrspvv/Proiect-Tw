@@ -34,6 +34,21 @@ INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `
 INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('13', 'Gin', 'Băuturi alcoolice', 'imagini\\Produse\\gin.png', '50 ml', '8');
 INSERT INTO `produse` (`id_produs`, `nume`, `categorie`, `poza`,  `descriere`, `pret`) VALUES ('14', 'Whisky', 'Băuturi alcoolice', 'imagini\\Produse\\jack.png', 'Jack Daniels 50 ml', '13');
 
+INSERT INTO `stoc` VALUES ('1', '1',  SYSDATE(), 100) 
+INSERT INTO `stoc` VALUES ('2', '2',  SYSDATE(), 100) 
+INSERT INTO `stoc` VALUES ('3', '3',  SYSDATE(), 100);
+INSERT INTO `stoc` VALUES ('4', '4',  SYSDATE(), 100);
+INSERT INTO `stoc` VALUES ('5', '5',  SYSDATE(), 100);
+INSERT INTO `stoc` VALUES ('6', '6',  SYSDATE(), 100);
+INSERT INTO `stoc` VALUES ('7', '7',  SYSDATE(), 100); 
+INSERT INTO `stoc` VALUES ('8', '8',  SYSDATE(), 100);
+INSERT INTO `stoc` VALUES ('9', '9',  SYSDATE(), 100); 
+INSERT INTO `stoc` VALUES ('10', '10',  SYSDATE(), 100);
+INSERT INTO `stoc` VALUES ('11', '11',  SYSDATE(), 100);
+INSERT INTO `stoc` VALUES ('12', '12',  SYSDATE(), 100);
+INSERT INTO `stoc` VALUES ('13', '13',  SYSDATE(), 100);
+INSERT INTO `stoc` VALUES ('14', '14',  SYSDATE(), 100); 
+
 
 
 
