@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imagini/fundal9.jpg);
+    background-size: cover;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+}
+
+.mese {
+    width: 40%;
+    background-image: url(imagini/paper.jpg);
+    position: relative;
+    margin-top: 10%;
+    left: 30%;
+    border-radius:10px;
+	color: black;
+	opacity: 0.95;
+    font-size: 20px;
+    text-shadow: 1px 1px white;
+	
+}
+ul{
+	text-align:left;
+	margin-left: 70px;
+}
+li{
+	
+    margin-right: 2%;
+	padding-bottom: 40px;
+	padding-left: 30px;
+	font-size: 25px;
+	color: whitesmoke;
+	text-shadow: 1px 1px 1px black;
+}
+.titlu{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 36px;
+}
+span {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 40px;
+}
+
+
+.button {
+	text-align:right;
+    background-color: skyblue;
+    border-color: white;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 4%;
+}
+
+.off{
+	
+    background-color: gray;
+
+    border-color: whitesmoke;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 4%;
+}
+
