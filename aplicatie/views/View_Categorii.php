@@ -17,9 +17,9 @@
         <nav class="linkuri-meniu">
             <ul>
                 <li><a href="../home.php"><p>Acasă</p></a></li>
+                <li><a href="../home/rezervare.php"><p>Rezervare</p></a></li>
                 <li><a href="../home/meniu.php"><p>Meniu</p></a></li>
                 <li><a href="../home/desprenoi.php"><p>Despre noi</p></a></li>
-				<li><a href="../home/stoc.php"><p>Stoc</p></a></li>	
             </ul>
             <div class = "log"><a href = "../home/cont.php"><img src="imagini/logare.png" alt = ""></a> </div>
             <div class = "bon"><a href = "../home/nota.php"><img src="imagini/bon.png" alt = ""></a> </div>
