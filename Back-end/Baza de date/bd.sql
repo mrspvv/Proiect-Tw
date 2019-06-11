@@ -39,7 +39,7 @@ CREATE TABLE Stoc(
 
 CREATE TABLE Note(
 	id_nota INT NOT NULL PRIMARY KEY,
-    id_client INT NOT NULL,
+        id_client INT NOT NULL,
 	cod INT NOT NULL,
 	data_inregistrare DATE NOT NULL,
     FOREIGN KEY (id_client) REFERENCES Clienti (id_clienti)
@@ -69,3 +69,7 @@ CREATE TABLE Mese(
 	
 );
 
+
+CREATE INDEX indx1 ON Categorii (categorie);
+CREATE INDEX indx1 ON Clienti (id_client);
+CREATE INDEX indx1 ON Comanda (id_client, id_produs);
